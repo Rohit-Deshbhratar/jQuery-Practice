@@ -7,9 +7,35 @@
     <title>CSS Classes</title>
     <script src="js/jquery-3.6.0.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script></script>
+    <script>
+        $(document).ready(function(){
+            $("#add-class").click(function(){
+                $("#add").addClass("btn-change");
+            });
+
+            $("#remove-class").click(function(){
+                $("#remove").removeClass("btn-change");
+            });
+
+            $("#toggle-class").click(function(){
+                $("#toggled").toggleClass("btn-change");
+            });
+        });
+    </script>
 </head>
 <body>
-    <h1></h1>    
+    <h1>CSS Classes Examples</h1>    
+
+    <h3>Example of addClass() Method.</h3>
+    <button id="add-class">Click To Change Next Button</button>
+    <button id="add">Look How Do I Change</button>
+
+    <h3>Example of removeClass() Method.</h3>
+    <button id="remove-class">Click To Change Next Button</button>
+    <button id="remove" class="btn-change">Look How Do I Change</button>
+
+    <h3>Example of toggleClass() Method.</h3>
+    <button id="toggle-class">Click To See Toggle Effect</button>
+    <button id="toggled">Look How Do I Change</button>
 </body>
 </html>

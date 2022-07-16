@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS() Example</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      $(document).ready(function () {
+        $("#set-css").click(function () {
+          $("h1").css("color", "red");
+        });
+
+        $("#multiple-css").click(function () {
+          $("div, #multiple").css({
+            "background-color": "maroon",
+            color: "blue",
+            "font-size": "30px",
+          });
+        });
+
+        $("#return").click(function () {
+          alert($("div").css("background-color"));
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Implementation Of CSS() Method.</h1>
+    <button id="set-css">Click Me</button>
+
+    <div>
+      <p id="multiple">
+        This is an example of setting multiple CSS properties.
+      </p>
+      <button id="multiple-css">Click Me</button>
+    </div>
+
+    <p>
+      This is an example of returning CSS property. To see returning property
+      click button.
+    </p>
+    <button id="return">Return</button>
+  </body>
+</html>

@@ -52,3 +52,26 @@ img {
 input {
     margin-bottom: 1rem;
 }
+
+.btn-change {
+    border-radius: 5px;
+    background-color: green;
+    color: crimson;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #663280;
+}
+
+.container > div {
+    background-color: #e54ceb;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
