@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Set</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+        $(document).ready(function(){
+            $("#set-text").click(function(){
+                $("#p1").text("Wow! You set the new text.");
+            });
+
+            $("#set-html").click(function(){
+                $("#p2").html("<u><i>You have set new text with new elements.</i><u/>");
+            });
+
+            $("#set-val").click(function(){
+                $("#set-value").val("ROHIT");
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <h1>jQuery Set Example</h1>
+
+    <p id="p1">Click the button to change this text.</p>
+    <button id="set-text">Set Text</button>
+
+    <p id="p2">Click the button to set HTML</p>
+    <button id="set-html">Set HTML</button>
+
+    <p>Click on the button to set new value in empty text field.</p>
+    
+      <input type="text" name="text" id="set-value" value="Set new value here" />
+      <button id="set-val">Set Value</button>
+    
+  </body>
+</html>

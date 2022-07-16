@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Up Example</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+        $(document).ready(function(){
+            $("#up").click(function(){
+                $("#message-up").slideUp(1800);
+            });
+
+            $("#down").click(function(){
+                $("#message-down").slideDown(2500);
+            });
+
+            $("#toggle").click(function(){
+                $("#message-toggle").slideToggle("fast");
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <h1>Slide Example</h1>
+    <div id="up">Click Here To Slide Up Details...</div>
+    <div id="message-up">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+      architecto accusantium sunt temporibus in eveniet harum perferendis quasi,
+      maiores unde officiis nisi! Nesciunt expedita commodi quaerat vero autem
+      exercitationem illo. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Unde, alias! Tempore, adipisci itaque est numquam alias nulla
+      mollitia corrupti sit vero distinctio eum vel nisi beatae enim sunt non
+      voluptatum.
+    </div>
+
+    <div id="down">Click Here To Slide Down Details...</div>
+    <div id="message-down">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+      architecto accusantium sunt temporibus in eveniet harum perferendis quasi,
+      maiores unde officiis nisi! Nesciunt expedita commodi quaerat vero autem
+      exercitationem illo. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Unde, alias! Tempore, adipisci itaque est numquam alias nulla
+      mollitia corrupti sit vero distinctio eum vel nisi beatae enim sunt non
+      voluptatum.
+    </div>
+
+    <div id="toggle">Click Here To Toggle Details...</div>
+    <div id="message-toggle">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
+      architecto accusantium sunt temporibus in eveniet harum perferendis quasi,
+      maiores unde officiis nisi! Nesciunt expedita commodi quaerat vero autem
+      exercitationem illo. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Unde, alias! Tempore, adipisci itaque est numquam alias nulla
+      mollitia corrupti sit vero distinctio eum vel nisi beatae enim sunt non
+      voluptatum.
+    </div>
+  </body>
+</html>

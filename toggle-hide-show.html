@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle (Hide/Show) Example</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").toggle();
+            });
+        })
+    </script>
+  </head>
+  <body>
+    <h1>Toggle Example</h1>
+    <div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, unde
+        omnis nostrum, aliquid expedita ipsa obcaecati consectetur quam maiores
+        numquam doloribus nemo suscipit nulla et perspiciatis temporibus
+        nesciunt repellendus veniam! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Fugit libero earum rem voluptate veritatis. Quidem
+        nihil dolorem consequuntur? Error porro natus incidunt laborum itaque
+        omnis libero voluptas quo eum quidem? Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Tenetur itaque reiciendis totam minus in
+        iusto consequuntur dolorum, optio ea animi voluptate dicta deserunt ad
+        vero assumenda labore nostrum sapiente cupiditate.
+      </p>
+    </div>
+    <button>Click To See Toggle Effect.</button>
+  </body>
+</html>

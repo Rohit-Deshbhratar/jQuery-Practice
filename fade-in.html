@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fade In Example</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      $(document).ready(function () {
+        $("div").hide();
+
+        $("#btn-fade-in").click(function () {
+          $("#fade-in").fadeIn();
+        });
+
+        $("#btn-fast").click(function () {
+          $("#fast").fadeIn("fast");
+        });
+
+        $("#btn-slow").click(function () {
+          $("#slow").fadeIn("slow");
+        });
+
+        $("#btn-speed").click(function () {
+          $("#speed").fadeIn(3000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>fadeIn() Example</h1>
+    <button id="btn-fade-in">fadeIn()</button>
+    <button id="btn-fast">fadeIn() FAST</button>
+    <button id="btn-slow">fadeIn() SLOW</button>
+    <button id="btn-speed">fadeIn() TIME</button>
+
+    <div id="fade-in">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+        ipsum sequi fugiat excepturi consectetur quis? Esse illum veniam magnam,
+        voluptates obcaecati dolorem nulla ea numquam accusantium odit culpa
+        vitae nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nesciunt dignissimos repellat delectus sit consectetur consequuntur,
+        minima eaque fuga quaerat, id suscipit! Quibusdam eos placeat fuga hic
+        illo omnis quaerat eveniet? Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Facere libero nemo deleniti. Asperiores id perferendis
+        laborum sint, officia voluptatem eius, delectus deleniti doloribus quasi
+        praesentium iste autem, laudantium eaque distinctio?
+      </p>
+    </div>
+
+    <div id="fast">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+        ipsum sequi fugiat excepturi consectetur quis? Esse illum veniam magnam,
+        voluptates obcaecati dolorem nulla ea numquam accusantium odit culpa
+        vitae nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nesciunt dignissimos repellat delectus sit consectetur consequuntur,
+        minima eaque fuga quaerat, id suscipit! Quibusdam eos placeat fuga hic
+        illo omnis quaerat eveniet? Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Facere libero nemo deleniti. Asperiores id perferendis
+        laborum sint, officia voluptatem eius, delectus deleniti doloribus quasi
+        praesentium iste autem, laudantium eaque distinctio?
+      </p>
+    </div>
+
+    <div id="slow">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+        ipsum sequi fugiat excepturi consectetur quis? Esse illum veniam magnam,
+        voluptates obcaecati dolorem nulla ea numquam accusantium odit culpa
+        vitae nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nesciunt dignissimos repellat delectus sit consectetur consequuntur,
+        minima eaque fuga quaerat, id suscipit! Quibusdam eos placeat fuga hic
+        illo omnis quaerat eveniet? Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Facere libero nemo deleniti. Asperiores id perferendis
+        laborum sint, officia voluptatem eius, delectus deleniti doloribus quasi
+        praesentium iste autem, laudantium eaque distinctio?
+      </p>
+    </div>
+
+    <div id="speed">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+        ipsum sequi fugiat excepturi consectetur quis? Esse illum veniam magnam,
+        voluptates obcaecati dolorem nulla ea numquam accusantium odit culpa
+        vitae nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nesciunt dignissimos repellat delectus sit consectetur consequuntur,
+        minima eaque fuga quaerat, id suscipit! Quibusdam eos placeat fuga hic
+        illo omnis quaerat eveniet? Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Facere libero nemo deleniti. Asperiores id perferendis
+        laborum sint, officia voluptatem eius, delectus deleniti doloribus quasi
+        praesentium iste autem, laudantium eaque distinctio?
+      </p>
+    </div>
+  </body>
+</html>

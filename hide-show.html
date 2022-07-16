@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID Selector Example</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#lorem").hide(2000);
+        });
+
+        $("#btn2").click(function () {
+          $(".lorem").hide(2000);
+        });
+
+        $("#btn3").click(function(){
+            $("#lorem").show(2000);
+        });
+
+        $("#btn4").click(function(){
+            $(".lorem").show(2000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Lorem Ipsum</h1>
+    <h3>This is ID</h3>
+    <div id="lorem">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias corporis
+        esse et aliquam error voluptatum quasi reiciendis doloribus, mollitia
+        necessitatibus officiis distinctio unde nostrum consectetur architecto
+        neque temporibus quae tempore. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Consectetur aspernatur consequuntur repellat deserunt.
+        Vitae numquam neque iusto. Provident inventore officia ex velit sequi
+        veritatis, atque quos ut fuga facilis asperiores! Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Alias corporis esse et aliquam error
+        voluptatum quasi reiciendis doloribus, mollitia necessitatibus officiis
+        distinctio unde nostrum consectetur architecto neque temporibus quae
+        tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Consectetur aspernatur consequuntur repellat deserunt. Vitae numquam
+        neque iusto. Provident inventore officia ex velit sequi veritatis, atque
+        quos ut fuga facilis asperiores!
+      </p>
+    </div>
+
+    <h3>This is Class</h3>
+    <div class="lorem">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias corporis
+        esse et aliquam error voluptatum quasi reiciendis doloribus, mollitia
+        necessitatibus officiis distinctio unde nostrum consectetur architecto
+        neque temporibus quae tempore. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Consectetur aspernatur consequuntur repellat deserunt.
+        Vitae numquam neque iusto. Provident inventore officia ex velit sequi
+        veritatis, atque quos ut fuga facilis asperiores!Lorem ipsum, dolor sit
+        amet consectetur adipisicing elit. Alias corporis esse et aliquam error
+        voluptatum quasi reiciendis doloribus, mollitia necessitatibus officiis
+        distinctio unde nostrum consectetur architecto neque temporibus quae
+        tempore. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Consectetur aspernatur consequuntur repellat deserunt. Vitae numquam
+        neque iusto. Provident inventore officia ex velit sequi veritatis, atque
+        quos ut fuga facilis asperiores!
+      </p>
+    </div>
+    <div>
+      <button id="btn1">Hide ID</button>
+      <button id="btn2">Hide Class</button>
+      <button id="btn3">Show ID</button>
+      <button id="btn4">Show Class</button>
+    </div>
+  </body>
+</html>

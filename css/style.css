@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#lorem {
+    column-count: 3;
+    column-gap: 10rem;
+    column-rule: 2px solid black;
+    margin-bottom: 1.5rem;
+}
+
+.lorem {
+    column-count: 3;
+    column-gap: 10rem;
+    column-rule: 2px solid black;
+    margin-bottom: 1.5rem;
+}
+
+button {
+    margin-left: 0.9rem;
+}
+
+#up, #down, #toggle {
+    text-align: center;
+    background-color: #e54ceb;
+    margin-bottom: 0.2rem;
+}
+
+#message-up, #message-down, #message-toggle {
+    margin: 0.2rem 0 0.2rem 0;
+    background-color: #e54ceb;
+}
+
+#message-down {
+    display: none;
+}
+
+img {
+    position: absolute;
+    border: 1px solid #859666;
+    height: 300px;
+    width: 300px;
+}
+
+input {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fade Out Example</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      $(document).ready(function () {
+        $("#btn-fade-out").click(function () {
+          $("#fade-out").fadeOut();
+        });
+
+        $("#btn-fast").click(function () {
+          $("#fast").fadeOut("fast");
+        });
+
+        $("#btn-slow").click(function () {
+          $("#slow").fadeOut("slow");
+        });
+
+        $("#btn-speed").click(function () {
+          $("#speed").fadeOut(1500);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>fadeOut() Example</h1>
+    <button id="btn-fade-out">fadeOut()</button>
+    <button id="btn-fast">fadeOut() FAST</button>
+    <button id="btn-slow">fadeOut() SLOW</button>
+    <button id="btn-speed">fadeOut() TIME</button>
+
+    <div id="fade-out">
+      <p>Normal fade out.</p>
+    </div>
+
+    <div id="fast">
+      <p>FAST fadeOut.</p>
+    </div>
+
+    <div id="slow">
+      <p>SLOW fade-out.</p>
+    </div>
+
+    <div id="speed">
+      <p>fade-out with specified speed parameter.</p>
+    </div>
+  </body>
+</html>

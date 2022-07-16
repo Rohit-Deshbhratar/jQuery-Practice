@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Element</title>
+    <script src="js/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script>
+        $(document).ready(function(){
+            $("#answer").click(function(){
+                $("#one").prepend("Nowadays an ever-increasing number of women work full time, and in this reality it is widely believed that house chores should be shared between men and women equally.");
+                $("#one").after("One of the reasons for sharing housework between males and females is to promote gender equality.");
+                $("#four").before("A stereotype that has existed a long time is that females ought to stay home, taking care of the family once they got married.");
+                $("#four").append("This includes looking after the children and doing all of the housework, which is fairlylaborintensive.");
+            });
+        });
+    </script>
+  </head>
+  <body>
+    <h1>Solve following para jumbled question.</h1>
+
+    <p id="a">
+      A. This includes looking after the children and doing all of the
+      housework, which is fairlylaborintensive.
+    </p>
+    <p id="b">
+      B. A stereotype that has existed a long time is that females ought to stay
+      home, taking care of the family once they got married.
+    </p>
+    <p id="c">
+      C. Nowadays an ever-increasing number of women work full time, and in this
+      reality it is widely believed that house chores should be shared between
+      men and women equally.
+    </p>
+    <p id="d">
+      D. One of the reasons for sharing housework between males and females is
+      to promote gender equality.
+    </p>
+    <p id="options">
+      <b>A.</b><em>CDBA</em><b>B.</b><em>BCDA</em><b>C.</b><em>ACDB</em><b>D.</b
+      ><em>ADCB</em><b>E.</b><em>DCBA</em>
+    </p>
+    <button id="answer">Show Answer</button>
+    <div id="final-answer">
+        <p id="one"></p>
+        <p id="two"></p>
+        <p id="three"></p>
+        <p id="four"></p>
+    </div>
+  </body>
+</html>
