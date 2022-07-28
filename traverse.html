@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Traverse find()</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script>
+      $(document).ready(function () {
+        //find()
+        let find = $("#animal").find(".creature");
+        console.log(find);
+
+        let child = $("#animal").children(".creature");
+        console.log(child);
+
+        let paren = $("#animal").parent();
+        console.log(paren);
+
+        let parens = $(".terrain").parents();
+        console.log(parens);
+
+        let puntil = $(".terrain").parentsUntil();
+        console.log(puntil);
+
+        let frst = $(".terrain").first();
+        console.log(frst);
+
+        let lst = $(".terrain").last();
+        console.log(lst);
+
+        let eq = $("div").eq(2);
+        console.log(eq);
+
+        let filter = $("div").filter(".terrain");
+        console.log(filter);
+
+        let not = $("div").filter(".terrain");
+        console.log(not);
+
+        let sibling = $("div").siblings();
+        console.log(sibling);
+
+        let next = $("#animal").next();
+        console.log(next);
+
+        let nxtAll = $("div").nextAll();
+        console.log(nxtAll);
+
+        let nxtUntil = $("div").nextUntil("body");
+        console.log(nxtUntil);
+
+        let prev = $(".terrain").prev();
+        console.log(prev);
+
+        let prevAll = $(".creature").prevAll();
+        console.log(prevAll);
+
+        let prevUntil = $("#animal").prevUntil();
+        console.log(prevUntil);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>jQuery Traversing.</h1>
+    <h4>To see the output right click anywhere on webpage > inspect > console.</h4>
+
+    <div id="animal" class="creature">
+      <div class="creature">
+        Mammals
+        <div class="creature">Dog</div>
+        <div class="creature">Cats</div>
+        <div class="terrain">Forest</div>
+        <div class="terrain">Prairie</div>
+      </div>
+
+      <div class="creature">
+        Reptiles
+        <div class="creature">Snake</div>
+        <div class="creature">Lizard</div>
+        <div class="terrain">Jungle</div>
+      </div>
+    </div>
+  </body>
+</html>

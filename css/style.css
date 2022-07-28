@@ -9,6 +9,10 @@ h1 {
     margin-bottom: 1rem;
 }
 
+h4 {
+    text-decoration: underline;
+}
+
 #lorem {
     column-count: 3;
     column-gap: 10rem;
@@ -74,4 +78,16 @@ input {
     color: white;
     text-align: center;
     margin: 10px;
+}
+
+.creature {
+    margin: 20px;
+    background-color: #FFE1FF;
+    border: 1px solid #8B7B8B;
+}
+
+.terrain {
+    margin: 20px;
+    background-color: green;
+    border: 1px solid #8B7B8B;
 }
